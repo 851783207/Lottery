@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>demo</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.6.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+        </dependency>
+        <!-- ... existing code ... -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+        </dependency>
+        <!-- Deleted:        <dependency>-->
+        <!-- Deleted:            <groupId>org.mybatis.spring.boot</groupId>-->
+        <!-- Deleted:            <artifactId>mybatis-spring-boot-starter</artifactId>-->
+        <!-- Deleted:            <version>2.2.0</version>-->
+        <!-- Deleted:        </dependency>-->
+        <!-- Deleted:        <dependency>-->
+        <!-- Deleted:            <groupId>com.baomidou</groupId>-->
+        <!-- Deleted:            <artifactId>mybatis-plus-core</artifactId>-->
+        <!-- Deleted:            <version>3.5.2</version>-->
+        <!-- Deleted:            <scope>compile</scope>-->
+        <!-- Deleted:            <exclusions>-->
+        <!-- Deleted:                <exclusion>-->
+        <!-- Deleted:                    <artifactId>mybatis</artifactId>-->
+        <!-- Deleted:                    <groupId>org.mybatis</groupId>-->
+        <!-- Deleted:                </exclusion>-->
+        <!-- Deleted:            </exclusions>-->
+        <!-- Deleted:        </dependency>-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.28</version>
+        </dependency>
+        <!-- ... existing code ... -->
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.7.RELEASE</version>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
